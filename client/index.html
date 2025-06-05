@@ -1,14 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Catálogo de Filmes</title>
 </head>
 <body>
-    <!--Listagem dos filmes, com descrição e nome-->
-    <!--Criação de novos filmes-->
-    <!--atualização de novos filmes-->
-    <!--Remover filmes-->
+    <h1>Lista de Filmes</h1>
+
+    <!-- Listagem dos filmes, com descrição, nome e ID -->
+    <section id="filmes">
+        <article>
+            <strong>ID:</strong> 1
+            <h2>Django</h2>
+            <p>Um ex-escravo se torna caçador de recompensas e parte em missão para resgatar sua esposa.</p>
+        </article>
+        <article>
+            <strong>ID:</strong> 2
+            <h2>Matrix</h2>
+            <p>Um hacker descobre que o mundo em que vive é uma simulação criada por máquinas.</p>
+        </article>
+    </section>
+
+    <hr>
+
+    <!-- Criação de novos filmes -->
+    <section id="criar-filme">
+        <h2>Adicionar Novo Filme</h2>
+        <form>
+            <label for="nome">Nome do Filme:</label><br>
+            <input type="text" id="nome" name="nome"><br><br>
+
+            <label for="descricao">Descrição:</label><br>
+            <textarea id="descricao" name="descricao"></textarea><br><br>
+
+            <button type="submit">Adicionar Filme</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- Atualização de filmes -->
+    <section id="atualizar-filme">
+        <h2>Atualizar Filme</h2>
+        <form>
+            <label for="id-filme">ID do Filme:</label><br>
+            <input type="number" id="id-filme" name="id-filme"><br><br>
+
+            <label for="novo-nome">Novo Nome:</label><br>
+            <input type="text" id="novo-nome" name="novo-nome"><br><br>
+
+            <label for="nova-descricao">Nova Descrição:</label><br>
+            <textarea id="nova-descricao" name="nova-descricao"></textarea><br><br>
+
+            <button type="submit">Atualizar Filme</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- Remover filmes -->
+    <section id="remover-filme">
+        <h2>Remover Filme</h2>
+        <form>
+            <label for="remover-id">ID do Filme a Remover:</label><br>
+            <input type="number" id="remover-id" name="remover-id"><br><br>
+
+            <button type="submit">Remover Filme</button>
+        </form>
+    </section>
 </body>
 </html>
